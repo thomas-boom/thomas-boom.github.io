@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio zonder scroll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <button data-cat="landschap" class="active">Landschap</button>
+    <button data-cat="portret">Portret</button>
+    <button data-cat="steden">Steden</button>
+    <button data-cat="natuur">Natuur</button>
+    <button data-cat="nacht">Nacht</button>
+  </nav>
+  <main>
+    <section id="landschap" class="tab active">
+      <div class="carousel">
+        <button class="prev">‹</button>
+        <img src="images/landschap1.jpg" alt="">
+        <button class="next">›</button>
+      </div>
+    </section>
+    <section id="portret" class="tab">
+      <div class="carousel">
+        <button class="prev">‹</button>
+        <img src="images/portret1.jpg" alt="">
+        <button class="next">›</button>
+      </div>
+    </section>
+    <section id="steden" class="tab">
+      <div class="carousel">
+        <button class="prev">‹</button>
+        <img src="images/steden1.jpg" alt="">
+        <button class="next">›</button>
+      </div>
+    </section>
+    <section id="natuur" class="tab">
+      <div class="carousel">
+        <button class="prev">‹</button>
+        <img src="images/natuur1.jpg" alt="">
+        <button class="next">›</button>
+      </div>
+    </section>
+    <section id="nacht" class="tab">
+      <div class="carousel">
+        <button class="prev">‹</button>
+        <img src="images/nacht1.jpg" alt="">
+        <button class="next">›</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
